@@ -1,0 +1,35 @@
+﻿body {
+    font-family: Arial;
+}
+
+.education {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+
+}
+
+#CF {
+    font-size: 1.25em;
+}
+
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: violet;
+}
+
+a:visited {
+    color: brown;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    height: 5em;
+    background-color: aqua;
+    z-index: 1;
+    padding-left: 5px;
+}
