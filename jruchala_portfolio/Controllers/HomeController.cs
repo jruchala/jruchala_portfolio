@@ -26,5 +26,13 @@ namespace jruchala_portfolio.Controllers
 
             return View();
         }
+        public ActionResult Bootstrap()
+        {
+            return View();
+        }
+        public ActionResult Bootstrap2()
+        {
+            return View();
+        }
     }
 }

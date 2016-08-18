@@ -3,99 +3,161 @@
 <head>
     <title>=James Ruchala</title>
     <link rel="stylesheet" type="text/css" href="~/Content/css/stylesheet.css"/>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="header"><h1>James Ruchala</h1>
-        <ul id="navigation">
-            <li><a href="#top">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+    <div class="container">
+        
+        
+            
+                <div id="header">
+                    <h1>James Ruchala
+                        <div id="navButton">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Navigate
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                    <li><a href="#top">Home</a></li>
+                                    <li><a href="#resume">Resume</a></li>
+                                    <li><a href="#portfolio">Portfolio</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+
+                                </ul>
+                            </div>
+                        </div></h1>
+                               
+                 </div>
+            
+
+        <div id="welcome">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p>
+                        Hi, and welcome to this Webpage. I'm starting to learn Web development. This humble page is one of my first steps. I used to teach <a href="http://www.uncg.edu">ethnomusicology</a>. I've also worked in <a href="http://www.convtec.com">IT</a>.
+                        When I'm not creating humble web pages and apps, I like to play music on the banjo, mandolin, and fiddle.
+                    </p>
+                </div>
+                <div class="col-xs-6">
+                    
+                    <blockquote class="blockquore-reverse">
+                        <p>There's nothing we can't do if we work hard, never sleep, and shirk all other responsibilities in our lives.</p>
+                        <footer>Leslie Knope</footer>
+                    </blockquote>
+                       
+                    
+                </div>
+            </div>
+            
+           
+        </div>
+        <div id="resume">
+
+            <h2 class="sectionHead">Resume</h2>
+            <div class="row">
+                <div class="col-xs-6"><h3>Experience</h3>
+                    <p>
+                        <ul>
+                            <li>2014-2016: Service Desk Coordinator: Convergent Technologies, Winston-Salem, NC.</li>
+                            <li>2011-2014: Lecturer: University of North Carolina-Greensboro, Greensoboro, NC.</li>
+                            <li>2003-2011: Graduate Assistant, Brown University, Providence, RI.</li>
+                            <li>2000-2003: Independent musican and music teacher.</li>
+                            <li>1997-2000: Editor, About.com, New York, NY.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-xs-6">
+                    <h3>Education</h3>
+                    <p>
+                        <ul>
+                            <li class="education">Coder Foundry: <a href="https://www.coderfoundry.com/full-stack-immersive-class/">Full-stack .NET Development course</a>; In progress.</li>
+                            <li class="education">Forsyth Tech: AAS, <a href="http://www.forsythtech.edu/catalog/1617/program/network-technology">Networking Technologies</a>; 2016.</li>
+                            <li class="education">Brown University: PhD, <a href="https://www.brown.edu/academics/gradschool/programs/music-ethnomusicology">Ethnomusicology</a>; 2011.</li>
+                            <li class="education">New York University: BA, <a href="http://english.fas.nyu.edu/page/undergrad">English</a>; 1994.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <h3>Skills</h3>
+                    <p>
+                        <ul>
+                            <li>Bootstrap</li>
+                            <li>Microsoft Azure</li>
+                            <li>Visual Studio</li>
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>Microsoft Server 2012 administration</li>
+                            <li>Office 365 administration</li>
+                            <li>Server virtualization with Hyper-V</li>
+                        </ul>
+                    </p>
+
+                </div>
+                <div class="col-xs-6">
+                    <h3>Interests</h3>
+                    <p>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Music</li>
+                            <li>Fig Cultivation</li>
+                        </ul>
+                    </p>
+                </div>
+
+            </div>
+            
+           
+          
+        </div>
+        <div id="portfolio">
+            <table id="grid_of_links">
+                <thead>
+                    <tr><th colspan="3"><h2 class="sectionHead">Projects</h2></th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="http://nytimes.com"><img src="https://static.pexels.com/photos/215/road-sky-clouds-cloudy-small.jpg" /></a></td>
+                        <td><a href="http://ebay.com"><img src="https://static.pexels.com/photos/1440/city-road-street-buildings-small.jpg" /></a></td>
+                        <td><a href="http://www.github.com"><img src="https://static.pexels.com/photos/932/road-street-desert-industry-small.jpg" /></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.codecademy.com"><img src="https://static.pexels.com/photos/33109/fall-autumn-red-season-small.jpg" /></a></td>
+                        <td><a href="http://www.dropbox.com"><img src="https://static.pexels.com/photos/119730/pexels-photo-119730-small.jpeg" /></a></td>
+                        <td><a href="http://imdb.com"><img src="https://static.pexels.com/photos/122260/pexels-photo-122260-small.jpeg" /></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://google.com"><img src="https://static.pexels.com/photos/17663/pexels-photo-small.jpg" /></a></td>
+                        <td><a href="http://netflix.com"><img src="https://static.pexels.com/photos/10651/photo-1432821596592-e2c18b78144f-small.jpeg" /></a></td>
+                        <td><a href="http://craigslist.com"><img src="https://static.pexels.com/photos/24586/pexels-photo-24586-small.jpg" /></a></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div id="skills">
+           
+        </div>
+        <div id="contact">
+            <h2 class="sectionHead">Contact</h2>
+            <ul>
+                <li id="email"><a href="mailto:">Email Me</a></li>
+                <li id="github"><a href="https://github.com/jruchala">My GitHub Repository</a></li>
+                <li id="linkedIn"><a href="https://www.linkedin.com/in/james-ruchala-5a817a10">My LinkedIn Page</a></li>
+            </ul>
+          <br />
+          <br/>
+            <br/>
+            <br/>
+        </div>
+
     
-    <div id="welcome">
-        <p>Hi, and welcome to this Webpage. I'm starting to learn Web development. This humble page is one of my first steps.</p>
-        <p>I used to teach <a href="http://www.uncg.edu">ethnomusicology</a>. I've also worked in <a href="http://www.convtec.com">IT</a>.</p>
-        <p>When I'm not creating humble web pages and apps, I like to play music on the banjo, mandolin, and fiddle.</p>
-    </div>
-    <div id="resume">
-        <h2 class="sectionHead">Resume</h2>
-        <h3>Experience</h3>
-        <p>
-            <ul>
-                <li>2014-2016: Service Desk Coordinator: Convergent Technologies, Winston-Salem, NC.</li>
-                <li>2011-2014: Lecturer: University of North Carolina-Greensboro, Greensoboro, NC.</li>
-                <li>2003-2011: Graduate Assistant, Brown University, Providence, RI.</li>
-                <li>2000-2003: Independent musican and music teacher.</li>
-                <li>1997-2000: Editor, About.com, New York, NY.</li>
-            </ul>
-        </p>
-        <h3>Education</h3>
-        <p>
-            <ul>
-                <li class="education">Coder Foundry: <a href="https://www.coderfoundry.com/full-stack-immersive-class/">Full-stack .NET Development course</a>; In progress.</li>
-                <li class="education">Forsyth Tech: AAS, <a href="http://www.forsythtech.edu/catalog/1617/program/network-technology">Networking Technologies</a>; 2016.</li>
-                <li class="education">Brown University: PhD, <a href="https://www.brown.edu/academics/gradschool/programs/music-ethnomusicology">Ethnomusicology</a>; 2011.</li>
-                <li class="education">New York University: BA, <a href="http://english.fas.nyu.edu/page/undergrad">English</a>; 1994.</li>
-            </ul>
-        </p>
-        <h3>Interests</h3>
-        <p>
-            <ul>
-                <li>Web Development</li>
-                <li>Music</li>
-                <li>Fig Cultivation</li>
-            </ul>
-        </p>
-    </div>
-    <div id="portfolio">
-        <table id="grid_of_links">
-            <thead>
-                <tr><th colspan="3"><h2 class="sectionHead">Projects</h2></th></tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="http://nytimes.com"><img src="https://static.pexels.com/photos/215/road-sky-clouds-cloudy-small.jpg" /></a></td>
-                    <td><a href="http://ebay.com"><img src="https://static.pexels.com/photos/1440/city-road-street-buildings-small.jpg" /></a></td>
-                    <td><a href="http://www.github.com"><img src="https://static.pexels.com/photos/932/road-street-desert-industry-small.jpg" /></a></td>
-                </tr>
-                <tr>
-                    <td><a href="http://www.codecademy.com"><img src="https://static.pexels.com/photos/33109/fall-autumn-red-season-small.jpg" /></a></td>
-                    <td><a href="http://www.dropbox.com"><img src="https://static.pexels.com/photos/119730/pexels-photo-119730-small.jpeg" /></a></td>
-                    <td><a href="http://imdb.com"><img src="https://static.pexels.com/photos/122260/pexels-photo-122260-small.jpeg" /></a></td>
-                </tr>
-                <tr>
-                    <td><a href="http://google.com"><img src="https://static.pexels.com/photos/17663/pexels-photo-small.jpg" /></a></td>
-                    <td><a href="http://netflix.com"><img src="https://static.pexels.com/photos/10651/photo-1432821596592-e2c18b78144f-small.jpeg" /></a></td>
-                    <td><a href="http://craigslist.com"><img src="https://static.pexels.com/photos/24586/pexels-photo-24586-small.jpg" /></a></td>
-                </tr>
-            </tbody>
+     </div>
 
-        </table>
-    </div>
-    <div id="skills">
-        <h2 class="sectionHead">Skills</h2>
-        <ul>
-            <li>Microsoft Azure</li>
-            <li>Visual Studio</li>
-            <li>Javascript</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Microsoft Server 2012 administration</li>
-            <li>Office 365 administration</li>
-            <li>Server virtualization with Hyper-V</li>
-        </ul>
 
-    </div>
-    <div id="contact">
-        <h2 class="sectionHead">Contact</h2>
-        <ul>
-            <li id="email"><a href="mailto:">Email Me</a></li>
-            <li id="github"><a href="https://github.com/jruchala">My GitHub Repository</a></li>
-            <li id="linkedIn"><a href="https://www.linkedin.com/in/james-ruchala-5a817a10">My LinkedIn Page</a></li>
-        </ul>
-    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
 </html>
