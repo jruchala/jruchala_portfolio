@@ -34,5 +34,9 @@ namespace jruchala_portfolio.Controllers
         {
             return View();
         }
+        public ActionResult Resume()
+        {
+            return View();
+        }
     }
 }
