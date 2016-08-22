@@ -34,6 +34,14 @@
 
     <p id="resultFizzBuzz"></p>
 
+    <hr/>
+    <form>
+        <input type="text" id="possiblePalindrome" />
+        <button type="button" onclick="findPalindrome()">Palindrome?</button>
+    </form>
+
+    <p id="isAPalindrome"></p>
+
 <script type="text/javascript" >
     function calculateMin() {
 
@@ -97,6 +105,23 @@
                 document.getElementById("resultFizzBuzz").innerHTML += "<br/>" + x;
         }
     } // end fizzBuzz
+    function findPalindrome() {
+        input = document.getElementById("possiblePalindrome").value;
+
+        if (input.toLowerCase() == reverse(input).toLowerCase())
+            document.getElementById("isAPalindrome").innerHTML = "This is a palindrome!";
+        else
+            document.getElementById("isAPalindrome").innerHTML = "This is NOT a palindrome!";
+
+        function reverse(s) {
+            var o = '';
+            for (var i = s.length - 1; i >= 0; i--)
+                o += s[i];
+            return o;
+        }
+
+
+    } // end findPalindrome
 
 </script>
 </body>
