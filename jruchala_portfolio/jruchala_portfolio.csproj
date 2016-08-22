@@ -271,6 +271,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Bootstrap.cshtml" />
     <Content Include="Views\Home\Bootstrap2.cshtml" />
+    <Content Include="Views\Home\Exercise.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

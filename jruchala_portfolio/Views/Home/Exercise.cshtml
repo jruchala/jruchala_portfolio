@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <br/>
+    <br/>
+    <form>
+        <input type="number" id="input1" />
+        <input type="number" id="input2" />
+        <input type="number" id="input3" />
+        <input type="number" id="input4" />
+        <input type="number" id="input5" />
+        <button type="button" onclick="calculateMin()">Calculate</button>
+    </form>
+
+    <p id="resultEx"></p>
+    
+    <hr />
+    <form>
+        <input type="number" id="factorialNumber" />
+        <button type="button" onclick="calculateFactorial()">Factorial</button>
+    </form>
+
+    <p id="resultFactorial"></p>
+
+    <hr/>
+    <form>
+        <input type="number" id="fizzNum" />
+        <input type="number" id="buzzNum" />
+        <button type="button" onclick="fizzBuzz()">Fizz-Buzz</button>
+    </form>
+
+    <p id="resultFizzBuzz"></p>
+
+<script type="text/javascript" >
+    function calculateMin() {
+
+        inputArray = [];
+        inputArray.push(Number(document.getElementById("input1").value));       
+        inputArray.push(Number(document.getElementById("input2").value));
+        inputArray.push(Number(document.getElementById("input3").value));
+        inputArray.push(Number(document.getElementById("input4").value));
+        inputArray.push(Number(document.getElementById("input5").value));
+
+        
+
+        document.getElementById("resultEx").innerHTML = "Smallest number: " + Math.min(...inputArray);
+        document.getElementById("resultEx").innerHTML += "<br/>Largest number: " + Math.max(...inputArray);
+        document.getElementById("resultEx").innerHTML += "<br/>Sum: " + sum(inputArray);
+        document.getElementById("resultEx").innerHTML += "<br/>Mean: " + (sum(inputArray) / inputArray.length);
+        document.getElementById("resultEx").innerHTML += "<br/>Product: " + product(inputArray);
+        
+        function sum(rnge) {
+            total = 0;
+            for (var x = 0; x < rnge.length; x++) {
+                total += rnge[x];
+            }
+            return total;
+        } // end sum
+        function product(rnge) {
+            total = 1;
+            for (var x = 0; x < rnge.length; x++) {
+                total *= rnge[x];
+            }
+            return total;
+        } // end product
+
+    } // end calculateMin
+    function calculateFactorial() {
+        inNumber = Number(document.getElementById("factorialNumber").value);
+        document.getElementById("resultFactorial").innerHTML = "Factorial: " + factorial(inNumber);
+
+        function factorial(x) {
+            y = 1;
+            for (var i = x; i > 0; i--) {
+                y *= x;
+                x--;
+            }
+            return y;
+        }
+    } // end calculateFactorial
+    function fizzBuzz() {
+        num1 = Number(document.getElementById("fizzNum").value);
+        num2 = Number(document.getElementById("buzzNum").value);
+        
+        for (var x = 1; x < 101; x++) {
+            if (x % num1 === 0 && x % num2 === 0) {
+                document.getElementById("resultFizzBuzz").innerHTML += "<br/>FizzBuzz";
+            }
+            else if (x % num1 === 0)
+                document.getElementById("resultFizzBuzz").innerHTML += "<br/>Fizz";
+            else if (x % num2 === 0)
+                document.getElementById("resultFizzBuzz").innerHTML += "<br/>Buzz";
+            else
+                document.getElementById("resultFizzBuzz").innerHTML += "<br/>" + x;
+        }
+    } // end fizzBuzz
+
+</script>
+</body>
+
+</html>
