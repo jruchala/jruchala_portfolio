@@ -214,3 +214,13 @@ th, td {
 .point {
     padding-top: 90px;
 }
+
+.codeSample{
+    background-color: black;
+}
+
+#JavaScriptExercises li {
+    display: inline-block;
+    list-style-type: none;
+}
+

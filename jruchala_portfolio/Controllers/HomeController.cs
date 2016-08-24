@@ -42,7 +42,7 @@ namespace jruchala_portfolio.Controllers
         {
             return View();
         }
-        public ActionResult JavascriptExercises()
+        public ActionResult JavaScriptExercises()
         {
             return View();
         }

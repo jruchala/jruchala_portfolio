@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="~/Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shCoreDefault.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shThemeDefault.css" rel="stylesheet" />
+    <link href="~/Content/css/stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <br />
+    <br />
+    <div>
+        <p>
+            <ul id="JavaScriptExercises">
+                <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Calculate">Calculate</button></li>
+                <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Factorial">Factorial</button></li>
+                <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#FizzBuzz">FizzBuzz</button></li>
+                <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Palindrome">Palindrome</button></li>
+            </ul>
+            
+        </p>
+    </div>
+ <!--Begin Calculate Modal-->
+
+    <!--Begin Factorial Modal-->
+    <div class="modal fade" id="Factorial" >
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                    <h1 class="modal-title" id="myModalLabel">JavaScript Factorial</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-xs-4">
+                            <p>The factorial of a non-negative integer <em>n</em> is the product of all positive integers less than or equal to <em>n</em>.</p>
+                            <form>
+                                <input type="number" id="factorialNumber" />
+                                <button type="button" class="btn btn-info btn-sm" onclick="calculateFactorial()">Factorial</button>
+                            </form>
+                            <p id="resultFactorial"></p>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="codeSample">
+                                <pre class="brush: js;">
+function calculateFactorial() {
+    inNumber = Number(document.getElementById("factorialNumber").value);
+    var y = 1;
+    for (var i = inNumber; i > 0; i--) {
+        y *= i;   
+    }
+    document.getElementById("resultFactorial").innerHTML = "Factorial: " + y;
+} // end calculateFactorial
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    <!--FizzBuzz Modal-->
+    <!--Palindrome Modal-->
+
+    <script type="text/javascript">
+    function calculate() {
+        // get five numbers from the user
+        inputArray = [];
+        inputArray.push(Number(document.getElementById("input1").value));
+        inputArray.push(Number(document.getElementById("input2").value));
+        inputArray.push(Number(document.getElementById("input3").value));
+        inputArray.push(Number(document.getElementById("input4").value));
+        inputArray.push(Number(document.getElementById("input5").value));
+
+
+        // display smallest of five numbers
+        document.getElementById("resultEx").innerHTML = "Smallest number: " + Math.min(...inputArray);
+        // display largest of five numbers
+        document.getElementById("resultEx").innerHTML += "<br/>Largest number: " + Math.max(...inputArray);
+        // display the sum of five numbers
+        document.getElementById("resultEx").innerHTML += "<br/>Sum: " + sum(inputArray);
+        // display the mean of five numbers
+        document.getElementById("resultEx").innerHTML += "<br/>Mean: " + (sum(inputArray) / inputArray.length);
+        // display the product of five numbers
+        document.getElementById("resultEx").innerHTML += "<br/>Product: " + product(inputArray);
+
+        function sum(rnge) {
+            total = 0;
+            for (var x = 0; x < rnge.length; x++) {
+                total += rnge[x];
+            }
+            return total;
+        } // end sum
+        function product(rnge) {
+            total = 1;
+            for (var x = 0; x < rnge.length; x++) {
+                total *= rnge[x];
+            }
+            return total;
+        } // end product
+
+    } // end calculateMin
+    function calculateFactorial() {
+        inNumber = Number(document.getElementById("factorialNumber").value);
+        var y = 1;
+        for (var i = inNumber; i > 0; i--) {
+            y *= i;
+        }
+        document.getElementById("resultFactorial").innerHTML = "Factorial: " + y;
+    } // end calculateFactorial
+    function fizzBuzz() {
+        num1 = Number(document.getElementById("fizzNum").value);
+        num2 = Number(document.getElementById("buzzNum").value);
+        document.getElementById("resultFizzBuzz").innerHTML = "";
+        for (var x = 1; x < 101; x++) {
+            if (x % num1 === 0 && x % num2 === 0) {
+                document.getElementById("resultFizzBuzz").innerHTML += "<br/>FizzBuzz";
+            }
+            else if (x % num1 === 0)
+                document.getElementById("resultFizzBuzz").innerHTML += "<br/>Fizz";
+            else if (x % num2 === 0)
+                document.getElementById("resultFizzBuzz").innerHTML += "<br/>Buzz";
+            else
+                document.getElementById("resultFizzBuzz").innerHTML += "<br/>" + x;
+        }
+    } // end fizzBuzz
+    function findPalindrome() {
+        input = document.getElementById("possiblePalindrome").value;
+
+        if (input.toLowerCase() == reverse(input).toLowerCase())
+            document.getElementById("isAPalindrome").innerHTML = "This is a palindrome!";
+        else
+            document.getElementById("isAPalindrome").innerHTML = "This is NOT a palindrome!";
+
+        function reverse(s) {
+            var o = '';
+            for (var i = s.length - 1; i >= 0; i--)
+                o += s[i];
+            return o;
+        }
+
+
+    } // end findPalindrome
+    function countUpTo() {
+
+        topNumber = Number(document.getElementById("topNumber").value);
+
+
+            var anArray = [];
+            for (var i = 0; i <= topNumber; i++) {
+                anArray.push(i);
+            }
+            document.getElementById("displayCount").innerHTML = "Count: " + anArray;
+        } // end countUpTo
+
+    </script>
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+</body>
+</html>

@@ -317,7 +317,7 @@
     <Content Include="Views\Home\Bootstrap.cshtml" />
     <Content Include="Views\Home\Bootstrap2.cshtml" />
     <Content Include="Views\Home\Exercise.cshtml" />
-    <Content Include="Views\Home\JavascriptExercises.cshtml" />
+    <Content Include="Views\Home\JavaScriptExercises.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

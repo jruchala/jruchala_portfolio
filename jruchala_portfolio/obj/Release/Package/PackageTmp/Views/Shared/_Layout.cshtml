@@ -25,23 +25,24 @@
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    
 
-                    <div id="navButton">
-                        <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Navigate
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-                                <li><a href="#welcome">Welcome</a></li>
-                                <li><a href="#resume">Resume</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                
+                    <li>
+                        <div id="navButton">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Navigate
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                    <li><a href="#welcome">Welcome</a></li>
+                                    <li><a href="#resume">Resume</a></li>
+                                    <li><a href="#portfolio">Portfolio</a></li>
+                                    <li><a href="#contact">Contact</a></li>
 
 
-                            </ul>
-                        </div>
+
+                                </ul>
+                    </li>
+                    </div>
                     </div>
                 </ul>
               
@@ -59,5 +60,9 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
 </body>
 </html>
