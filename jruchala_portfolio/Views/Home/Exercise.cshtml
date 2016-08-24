@@ -6,45 +6,72 @@
 <body>
     <br/>
     <br/>
-    <form>
-        <input type="number" id="input1" />
-        <input type="number" id="input2" />
-        <input type="number" id="input3" />
-        <input type="number" id="input4" />
-        <input type="number" id="input5" />
-        <button type="button" onclick="calculateMin()">Calculate</button>
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 well">
+                <form>
+                    <input type="number" id="input1" />
+                    <input type="number" id="input2" />
+                    <input type="number" id="input3" />
+                    <input type="number" id="input4" />
+                    <input type="number" id="input5" />
+                    <button type="button" onclick="calculate()">Calculate</button>
+                </form>
+            </div>
+            <div class="col-xs-6 well">
+                <p id="resultEx"></p>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-xs-4">
+                <form>
+                    <input type="number" id="factorialNumber" />
+                    <button type="button" onclick="calculateFactorial()">Factorial</button>
+                </form>
+            </div>
+            <div class="col-xs-4">
+                <p id="resultFactorial"></p>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-xs-4 well">
+                <form>
+                    <input type="number" id="fizzNum" />
+                    <input type="number" id="buzzNum" >/
+                    <button type="button" onclick="fizzBuzz()">Fizz-Buzz</button>
+                </form>
+            </div>
+            <div class="col-xs-4">
+                <p id="resultFizzBuzz"></p>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-xs-4">
+                <form>
+                    <input type="text" id="possiblePalindrome" />
+                    <button type="button" onclick="findPalindrome()">Palindrome?</button>
+                </form>
+            </div>
+            <div class="col-xs-4">
+                <p id="isAPalindrome"></p>
+            </di>v
+        </div>
+        <hr />
+        <form>
+            <input type="text" id="topNumber" />
+            <button type="button" onclick="countUpTo()">Count!</button>
+        </form>
 
-    <p id="resultEx"></p>
-    
-    <hr />
-    <form>
-        <input type="number" id="factorialNumber" />
-        <button type="button" onclick="calculateFactorial()">Factorial</button>
-    </form>
+        <p id="displayCount"></p>
+    </div>
 
-    <p id="resultFactorial"></p>
-
-    <hr/>
-    <form>
-        <input type="number" id="fizzNum" />
-        <input type="number" id="buzzNum" />
-        <button type="button" onclick="fizzBuzz()">Fizz-Buzz</button>
-    </form>
-
-    <p id="resultFizzBuzz"></p>
-
-    <hr/>
-    <form>
-        <input type="text" id="possiblePalindrome" />
-        <button type="button" onclick="findPalindrome()">Palindrome?</button>
-    </form>
-
-    <p id="isAPalindrome"></p>
 
 <script type="text/javascript" >
-    function calculateMin() {
-
+    function calculate() {
+        // get five numbers from the user
         inputArray = [];
         inputArray.push(Number(document.getElementById("input1").value));       
         inputArray.push(Number(document.getElementById("input2").value));
@@ -53,11 +80,15 @@
         inputArray.push(Number(document.getElementById("input5").value));
 
         
-
+        // display smallest of five numbers
         document.getElementById("resultEx").innerHTML = "Smallest number: " + Math.min(...inputArray);
+        // display largest of five numbers
         document.getElementById("resultEx").innerHTML += "<br/>Largest number: " + Math.max(...inputArray);
+        // display the sum of five numbers
         document.getElementById("resultEx").innerHTML += "<br/>Sum: " + sum(inputArray);
+        // display the mean of five numbers
         document.getElementById("resultEx").innerHTML += "<br/>Mean: " + (sum(inputArray) / inputArray.length);
+        // display the product of five numbers
         document.getElementById("resultEx").innerHTML += "<br/>Product: " + product(inputArray);
         
         function sum(rnge) {
@@ -78,21 +109,16 @@
     } // end calculateMin
     function calculateFactorial() {
         inNumber = Number(document.getElementById("factorialNumber").value);
-        document.getElementById("resultFactorial").innerHTML = "Factorial: " + factorial(inNumber);
-
-        function factorial(x) {
-            y = 1;
-            for (var i = x; i > 0; i--) {
-                y *= x;
-                x--;
-            }
-            return y;
+        var y = 1;
+        for (var i = inNumber; i > 0; i--) {
+            y *= i;   
         }
+        document.getElementById("resultFactorial").innerHTML = "Factorial: " + y;
     } // end calculateFactorial
     function fizzBuzz() {
         num1 = Number(document.getElementById("fizzNum").value);
         num2 = Number(document.getElementById("buzzNum").value);
-        
+        document.getElementById("resultFizzBuzz").innerHTML = "";
         for (var x = 1; x < 101; x++) {
             if (x % num1 === 0 && x % num2 === 0) {
                 document.getElementById("resultFizzBuzz").innerHTML += "<br/>FizzBuzz";
@@ -122,6 +148,17 @@
 
 
     } // end findPalindrome
+    function countUpTo() {
+
+        topNumber = Number(document.getElementById("topNumber").value);
+        
+        
+            var anArray = [];
+            for (var i = 0; i <= topNumber; i++) {
+                anArray.push(i);
+            }
+            document.getElementById("displayCount").innerHTML = "Count: " + anArray;
+        } // end countUpTo
 
 </script>
 </body>
