@@ -1,175 +1,371 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>=James Ruchala</title>
-    <link rel="stylesheet" type="text/css" href="~/Content/css/stylesheet.css"/>
-    <link href="~/Content/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
-    <link href="~/Content/SyntaxHighlighter/shCoreDefault.css" rel="stylesheet" />
-    <link href="~/Content/SyntaxHighlighter/shThemeDefault.css" rel="stylesheet" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio page of James Ruchala, PhD, developer">
+    <meta name="author" content="James Ruchala">
+
+    <title>James Ruchala - Developer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="~/Content/css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="~/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
-    <div class="container">
-        
-        
-        @*<div id="navButton">
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Navigate
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-                    <li><a href="#welcome">Welcome</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    
 
-                </ul>
-            </div>
-        </div>*@
-        <div id="headContainer">
-            <div id="header">
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>James Ruchala</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#services" onclick=$("#menu-close").click();>Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+            </li>
+            <li>
+                <a href="#footer" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>James Ruchala</h1>
+            <h3>Developer</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About James Ruchala</h2>
+                    <p class="lead">Developer, writer and musician</p>
+                </div>
 
             </div>
-            <div id="headerText">
-                <p>
-                    <h1>JAMES RUCHALA</h1><br />
-                    <h3>Web Developer</h3>
-                </p>
-            </div>
-        </div>    
-
-        <div id="welcome" class="point">
             <div class="row">
                 <div class="col-xs-6">
                     <p>
-                        I'm a student in Coder Foundry's full-stack development course. I've created this page to contain and present some of my projects for the course. 
+                        I'm a student in Coder Foundry's full-stack development course. I've created this page to contain and present some of my projects for the course.
                         I used to teach ethnomusicology and I worked for a while in information technology, mainly doing desktop and server support for a managed-services provider.
                         When I'm not creating humble web pages and apps, I like to play music on the banjo, mandolin, and fiddle.
                     </p>
-                    <p>
-                        The projects currently linked below are place-holders (no, I didn't design the <em>New York Times</em> Website), but I'll be replacing them with my actual work in the coming weeks.
-                    </p>
                 </div>
                 <div class="col-xs-6">
-                    
+
                     <blockquote class="blockquore-reverse">
                         <p>There's nothing we can't do if we work hard, never sleep, and shirk all other responsibilities in our lives.</p>
                         <footer>Leslie Knope</footer>
                     </blockquote>
-                       
-                    
+
+
                 </div>
             </div>
-            
-           
+            <!-- /.row -->
         </div>
-        <div id="resume" class="point">
+        <!-- /.container -->
+    </section>
 
-            <h2 class="sectionHead">Resume</h2>
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>My Services</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-coffee fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>JavaScript</strong>
+                                </h4>
+                                <p>Interactive Web sites with JavaScript and jQuery.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-code fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Web Design</strong>
+                                </h4>
+                                <p>If you need a Web site, I can build one. HTML and CSS.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-desktop fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>C# Development</strong>
+                                </h4>
+                                <p>Web and desktop applications using Visual Studio.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-pied-piper fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Pied Piper Logo</strong>
+                                </h4>
+                                <p>I've seen many episodes of HBO's <em>Silicon Valley</em>.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>See what I can do below...</h1>
+        </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-6"><h3>Experience</h3>
-                    <p>
-                        <ul>
-                            <li>2014-2016: Service Desk Coordinator: Convergent Technologies, Winston-Salem, NC.</li>
-                            <li>2011-2014: Lecturer: University of North Carolina-Greensboro, Greensoboro, NC.</li>
-                            <li>2003-2011: Graduate Assistant, Brown University, Providence, RI.</li>
-                            <li>2000-2003: Independent musican and music teacher.</li>
-                            <li>1997-2000: Editor, About.com, New York, NY.</li>
-                        </ul>
-                    </p>
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="/Home/JavaScriptExercises">
+                                    <h2><span>JavaScript Exercises</span></h2>
+                                   <img class="img-portfolio img-responsive" src="~/Content/images/JSEportfolio.png">
+                               
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="~/Content/images/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="~/Content/images/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="~/Content/images/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <a href="#" class="btn btn-dark">View More Items</a>
                 </div>
-                <div class="col-xs-6">
-                    <h3>Education</h3>
-                    <p>
-                        <ul>
-                            <li class="education">Coder Foundry: <a href="https://www.coderfoundry.com/full-stack-immersive-class/">Full-stack .NET Development course</a>; In progress.</li>
-                            <li class="education">Forsyth Tech: AAS, <a href="http://www.forsythtech.edu/catalog/1617/program/network-technology">Networking Technologies</a>; 2016.</li>
-                            <li class="education">Brown University: PhD, <a href="https://www.brown.edu/academics/gradschool/programs/music-ethnomusicology">Ethnomusicology</a>; 2011.</li>
-                            <li class="education">New York University: BA, <a href="http://english.fas.nyu.edu/page/undergrad">English</a>; 1994.</li>
-                        </ul>
-                    </p>
-                </div>
+                <!-- /.col-lg-10 -->
             </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-6">
-                    <h3>Skills</h3>
-                    <p>
-                        <ul>
-                            <li>Bootstrap</li>
-                            <li>Microsoft Azure</li>
-                            <li>Visual Studio</li>
-                            <li>Javascript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>Microsoft Server 2012 administration</li>
-                            <li>Office 365 administration</li>
-                            <li>Server virtualization with Hyper-V</li>
-                        </ul>
-                    </p>
-
+                <div class="col-lg-12 text-center">
+                    <h3>Get in touch to discuss your needs.</h3>
+                    <a href="#footer" class="btn btn-lg btn-light">Contact</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
                 </div>
-                <div class="col-xs-6">
-                    <h3>Interests</h3>
-                    <p>
-                        <ul>
-                            <li>Web Development</li>
-                            <li>Music</li>
-                            <li>Fig Cultivation</li>
-                        </ul>
-                    </p>
-                </div>
-
             </div>
-            
-           
-          
         </div>
-        <div id="portfolio" class="point">
-            <table id="grid_of_links">
-                <thead>
-                    <tr><th colspan="3"><h2 class="sectionHead">Projects</h2></th></tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>@Html.ActionLink("JavaScript Exercises", "JavaScriptExercises")</td>
-                        <td><a href="http://ebay.com"><img src="https://static.pexels.com/photos/1440/city-road-street-buildings-small.jpg" /></a></td>
-                        <td><a href="http://www.github.com"><img src="https://static.pexels.com/photos/932/road-street-desert-industry-small.jpg" /></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.codecademy.com"><img src="https://static.pexels.com/photos/33109/fall-autumn-red-season-small.jpg" /></a></td>
-                        <td><a href="http://www.dropbox.com"><img src="https://static.pexels.com/photos/119730/pexels-photo-119730-small.jpeg" /></a></td>
-                        <td><a href="http://imdb.com"><img src="https://static.pexels.com/photos/122260/pexels-photo-122260-small.jpeg" /></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://google.com"><img src="https://static.pexels.com/photos/17663/pexels-photo-small.jpg" /></a></td>
-                        <td><a href="http://netflix.com"><img src="https://static.pexels.com/photos/10651/photo-1432821596592-e2c18b78144f-small.jpeg" /></a></td>
-                        <td><a href="http://craigslist.com"><img src="https://static.pexels.com/photos/24586/pexels-photo-24586-small.jpg" /></a></td>
-                    </tr>
-                </tbody>
+    </aside>
 
-            </table>
+    <!-- Map -->
+    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d51573.483228993566!2d-80.20544105273437!3d36.10950780139564!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1472156137857" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <br />
+        <small>
+            <a href="https://goo.gl/maps/BJavy1xK9k32"></a>
+        </small>
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>James Ruchala</strong>
+                    </h4>
+                    <p>Developer
+                        <br>Winston-Salem, NC</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (917) 428-1121</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:jruchala@gmail.com">jruchala@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/jruchala"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/james-ruchala-5a817a10"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jruthedamaja/"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; James Ruchala 2016</p>
+                </div>
+            </div>
         </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
 
+    <!-- jQuery -->
+    <script src="~/Scripts/jquery.js"></script>
 
-        <div id="contact" class="point">
-            <h2 class="sectionHead">Contact</h2>
-            <ul>
-                <li id="email"><a href="mailto:">Email Me</a></li>
-                <li id="github"><a href="https://github.com/jruchala">My GitHub Repository</a></li>
-                <li id="linkedIn"><a href="https://www.linkedin.com/in/james-ruchala-5a817a10">My LinkedIn Page</a></li>
-            </ul>
-          <br />
-          <br/>
-            <br/>
-            <br/>
-        </div>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
 
-    
-     </div>
-
-    @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>*@
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
 
 </body>
+
 </html>

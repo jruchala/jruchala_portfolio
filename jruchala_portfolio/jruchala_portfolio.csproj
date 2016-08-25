@@ -300,7 +300,7 @@
     <Content Include="Scripts\SyntaxHighlighter\shCore.js" />
     <Content Include="Scripts\SyntaxHighlighter\shLegacy.js" />
     <Content Include="Scripts\_references.js" />
-    <None Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Web.config" />

@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>=James Ruchala</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/css/stylesheet.css"/>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shCoreDefault.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shThemeDefault.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        
+        
+        @*<div id="navButton">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Navigate
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                    <li><a href="#welcome">Welcome</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+
+                </ul>
+            </div>
+        </div>*@
+        <div id="headContainer">
+            <div id="header">
+
+            </div>
+            <div id="headerText">
+                <p>
+                    <h1>JAMES RUCHALA</h1><br />
+                    <h3>Developer</h3>
+                </p>
+            </div>
+        </div>    
+
+        <div id="welcome" class="point">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p>
+                        I'm a student in Coder Foundry's full-stack development course. I've created this page to contain and present some of my projects for the course. 
+                        I used to teach ethnomusicology and I worked for a while in information technology, mainly doing desktop and server support for a managed-services provider.
+                        When I'm not creating humble web pages and apps, I like to play music on the banjo, mandolin, and fiddle.
+                    </p>
+                    <p>
+                        The projects currently linked below are place-holders (no, I didn't design the <em>New York Times</em> Website), but I'll be replacing them with my actual work in the coming weeks.
+                    </p>
+                </div>
+                <div class="col-xs-6">
+                    
+                    <blockquote class="blockquore-reverse">
+                        <p>There's nothing we can't do if we work hard, never sleep, and shirk all other responsibilities in our lives.</p>
+                        <footer>Leslie Knope</footer>
+                    </blockquote>
+                       
+                    
+                </div>
+            </div>
+            
+           
+        </div>
+        <div id="resume" class="point">
+
+            <h2 class="sectionHead">Resume</h2>
+            <div class="row">
+                <div class="col-xs-6"><h3>Experience</h3>
+                    <p>
+                        <ul>
+                            <li>2014-2016: Service Desk Coordinator: Convergent Technologies, Winston-Salem, NC.</li>
+                            <li>2011-2014: Lecturer: University of North Carolina-Greensboro, Greensoboro, NC.</li>
+                            <li>2003-2011: Graduate Assistant, Brown University, Providence, RI.</li>
+                            <li>2000-2003: Independent musican and music teacher.</li>
+                            <li>1997-2000: Editor, About.com, New York, NY.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-xs-6">
+                    <h3>Education</h3>
+                    <p>
+                        <ul>
+                            <li class="education">Coder Foundry: <a href="https://www.coderfoundry.com/full-stack-immersive-class/">Full-stack .NET Development course</a>; In progress.</li>
+                            <li class="education">Forsyth Tech: AAS, <a href="http://www.forsythtech.edu/catalog/1617/program/network-technology">Networking Technologies</a>; 2016.</li>
+                            <li class="education">Brown University: PhD, <a href="https://www.brown.edu/academics/gradschool/programs/music-ethnomusicology">Ethnomusicology</a>; 2011.</li>
+                            <li class="education">New York University: BA, <a href="http://english.fas.nyu.edu/page/undergrad">English</a>; 1994.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <h3>Skills</h3>
+                    <p>
+                        <ul>
+                            <li>jQuery</li>
+                            <li>Bootstrap</li>
+                            <li>Microsoft Azure</li>
+                            <li>Visual Studio</li>
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>Microsoft Server 2012 administration</li>
+                            <li>Office 365 administration</li>
+                            <li>Server virtualization with Hyper-V</li>
+                        </ul>
+                    </p>
+
+                </div>
+                <div class="col-xs-6">
+                    <h3>Interests</h3>
+                    <p>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Music</li>
+                            <li>Fig Cultivation</li>
+                        </ul>
+                    </p>
+                </div>
+
+            </div>
+            
+           
+          
+        </div>
+        <div id="portfolio" class="point">
+            <table id="grid_of_links">
+                <thead>
+                    <tr><th colspan="3"><h2 class="sectionHead">Projects</h2></th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Html.ActionLink("JavaScript Exercises", "JavaScriptExercises", new { @class="jsexercises"})</td>
+                        <td><a href="http://ebay.com"><img src="https://static.pexels.com/photos/1440/city-road-street-buildings-small.jpg" /></a></td>
+                        <td><a href="http://www.github.com"><img src="https://static.pexels.com/photos/932/road-street-desert-industry-small.jpg" /></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.codecademy.com"><img src="https://static.pexels.com/photos/33109/fall-autumn-red-season-small.jpg" /></a></td>
+                        <td><a href="http://www.dropbox.com"><img src="https://static.pexels.com/photos/119730/pexels-photo-119730-small.jpeg" /></a></td>
+                        <td><a href="http://imdb.com"><img src="https://static.pexels.com/photos/122260/pexels-photo-122260-small.jpeg" /></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://google.com"><img src="https://static.pexels.com/photos/17663/pexels-photo-small.jpg" /></a></td>
+                        <td><a href="http://netflix.com"><img src="https://static.pexels.com/photos/10651/photo-1432821596592-e2c18b78144f-small.jpeg" /></a></td>
+                        <td><a href="http://craigslist.com"><img src="https://static.pexels.com/photos/24586/pexels-photo-24586-small.jpg" /></a></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+
+        <div id="contact" class="point">
+            <h2 class="sectionHead">Contact</h2>
+            <ul>
+                <li id="email"><a href="mailto:">Email Me</a></li>
+                <li id="github"><a href="https://github.com/jruchala">My GitHub Repository</a></li>
+                <li id="linkedIn"><a href="https://www.linkedin.com/in/james-ruchala-5a817a10">My LinkedIn Page</a></li>
+            </ul>
+          <br />
+          <br/>
+            <br/>
+            <br/>
+        </div>
+
+    
+     </div>
+
+    @*<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>*@
+
+</body>
+</html>
