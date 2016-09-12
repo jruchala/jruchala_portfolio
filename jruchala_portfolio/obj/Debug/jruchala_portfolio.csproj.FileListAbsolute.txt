@@ -82,3 +82,4 @@ c:\users\rucha\onedrive\documents\visual studio 2015\Projects\jruchala_portfolio
 C:\Users\rucha\onedrive\documents\visual studio 2015\Projects\jruchala_portfolio\jruchala_portfolio\bin\Chart.Mvc.dll
 C:\Users\rucha\onedrive\documents\visual studio 2015\Projects\jruchala_portfolio\jruchala_portfolio\bin\Chart.Mvc.pdb
 C:\Users\rucha\onedrive\documents\visual studio 2015\Projects\jruchala_portfolio\jruchala_portfolio\bin\Chart.Mvc.xml
+C:\Users\rucha\onedrive\documents\visual studio 2015\Projects\jruchala_portfolio\jruchala_portfolio\obj\Debug\jruchala_portfolio.csprojResolveAssemblyReference.cache
