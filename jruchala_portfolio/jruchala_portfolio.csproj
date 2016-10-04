@@ -230,6 +230,7 @@
     <Content Include="Content\images\portfolio-2.jpg" />
     <Content Include="Content\images\portfolio-3.jpg" />
     <Content Include="Content\images\portfolio-4.jpg" />
+    <Content Include="Content\images\Shopportfolio.png" />
     <Content Include="Content\SyntaxHighlighter\shCore.css" />
     <Content Include="Content\SyntaxHighlighter\shCoreDefault.css" />
     <Content Include="Content\SyntaxHighlighter\shCoreDjango.css" />

@@ -82,9 +82,14 @@
             <div class="row">
                 <div class="col-xs-6">
                     <p>
-                        I'm a student in Coder Foundry's full-stack development course. I've created this page to contain and present some of my projects for the course.
-                        I used to work in information technology, mainly doing desktop and server support for a managed-services provider. Before that I taught ethnomusicology for a local university.
-                        When I'm not creating humble web pages and apps, I like to play music on the banjo, mandolin, and fiddle.
+                        I'm a developer in Coder Foundry's full-stack immersive course. I've created this page to present my projects. I have experience with a range of modern Web development technologies and I'm learning new things every day.
+
+                    </p>
+                    <p>
+                        In addition to coding, I have professional information technology experience in networking, server support, and virtualization. 
+                    </p>
+                    <p>
+                        Before I began working in technology, I was a musician and teacher. I've taught ethnomusicology and music history for a local university and published my writings on music in academic journals. When I'm not creating web pages and apps, I like to play music on the banjo, mandolin, and fiddle.
                     </p>
                 </div>
                 <div class="col-xs-6">
@@ -121,7 +126,7 @@
                                     <strong>JavaScript</strong>
                                 </h4>
                                 <p>Interactive Web sites with JavaScript and jQuery.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <!-- comment our unused button <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -134,7 +139,7 @@
                                     <strong>Web Design</strong>
                                 </h4>
                                 <p>If you need a Web site, I can build one. HTML and CSS.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <!-- comment our unused button <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -147,20 +152,20 @@
                                     <strong>C# Development</strong>
                                 </h4>
                                 <p>Web and desktop applications using Visual Studio.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <!-- comment our unused button <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-pied-piper fa-stack-1x text-primary"></i>
+                                <i class="fa fa-lock fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Pied Piper Logo</strong>
+                                    <strong>.NET MVC</strong>
                                 </h4>
-                                <p>I've seen many episodes of HBO's <em>Silicon Valley</em>.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Modern, responsive apps with secure separation of concerns.</p>
+                                <!-- comment our unused button <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                     </div>
@@ -188,23 +193,27 @@
                     <h2>Portfolio</h2>
                     <hr class="small">
                     <div class="row">
+                        <!--E-commerce Link-->
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
+                                <a href="#" role="button" data-toggle="popover" data-trigger="hover" data-placement="left" title="E-commerce" data-content=".NET MVC Web App, built using 
+                                   Code-first Entity Framework">
                                     <h2><span>E-commerce Site</span></h2>
                                     <img class="img-portfolio img-responsive" src="~/Content/images/Shopportfolio.png">
                                 </a>
                             </div>
                         </div>
+                        <!--JavaScript Exercises Link-->
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="/Home/JavaScriptExercises">
+                                <a href="/Home/JavaScriptExercises" data-toggle="tooltip" title="Demonstrates a variety of basic algorithms coded in JavaScript and displayed with Bootstrap">
                                     <h2><span>JavaScript Exercises</span></h2>
                                    <img class="img-portfolio img-responsive" src="~/Content/images/JSEportfolio.png">
                                
                                 </a>
                             </div>
                         </div>
+                        <!--To be added-->
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
@@ -212,6 +221,7 @@
                                 </a>
                             </div>
                         </div>
+                        <!--To be added-->
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
@@ -365,6 +375,13 @@
         }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
+
+        // Initialize tooltip and popover apis
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+    })
+
     </script>
 
 </body>
