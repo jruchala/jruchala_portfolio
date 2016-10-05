@@ -53,6 +53,9 @@
                 <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
             </li>
             <li>
+                <a href="#resume" onclick=$("#menu-close").click();>Resume</a>
+            </li>
+            <li>
                 <a href="#footer" onclick=$("#menu-close").click();>Contact</a>
             </li>
         </ul>
@@ -82,9 +85,16 @@
             <div class="row">
                 <div class="col-xs-6">
                     <p>
-                        I'm a student in Coder Foundry's full-stack development course. I've created this page to contain and present some of my projects for the course.
-                        I used to work in information technology, mainly doing desktop and server support for a managed-services provider. Before that I taught ethnomusicology for a local university.
-                        When I'm not creating humble web pages and apps, I like to play music on the banjo, mandolin, and fiddle.
+                        I'm a developer in Coder Foundry's full-stack immersive course. I've created this page to present my projects. I have experience with a range of modern Web development technologies and I'm learning new things every day.
+                    </p>
+                    <p>
+                        In addition to coding, I have professional information technology experience in networking, server support, and virtualization. 
+                    </p>
+                    <p>
+                        Before I began working in technology, I was a musician and teacher. I've taught ethnomusicology and music history for a local university and published my writings on music in academic journals. When I'm not creating web pages and apps, I like to play music on the banjo, mandolin, and fiddle.
+                    </p>
+                    <p>
+                        For more information, check out my <a href="#resume">resume</a> or <a href="#portfolio">portfolio</a>. Or just <a href="#footer">get in touch</a>.
                     </p>
                 </div>
                 <div class="col-xs-6">
@@ -121,7 +131,7 @@
                                     <strong>JavaScript</strong>
                                 </h4>
                                 <p>Interactive Web sites with JavaScript and jQuery.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <!-- comment our unused button <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -134,7 +144,7 @@
                                     <strong>Web Design</strong>
                                 </h4>
                                 <p>If you need a Web site, I can build one. HTML and CSS.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <!-- comment our unused button <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -147,20 +157,20 @@
                                     <strong>C# Development</strong>
                                 </h4>
                                 <p>Web and desktop applications using Visual Studio.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <!-- comment our unused button <a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-pied-piper fa-stack-1x text-primary"></i>
+                                <i class="fa fa-lock fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Pied Piper Logo</strong>
+                                    <strong>.NET MVC</strong>
                                 </h4>
-                                <p>I've seen many episodes of HBO's <em>Silicon Valley</em>.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Modern, responsive apps with secure separation of concerns.</p>
+                                <!-- comment our unused button <a href="#" class="btn btn-light">Learn More</a>->-
                             </div>
                         </div>
                     </div>
@@ -188,23 +198,28 @@
                     <h2>Portfolio</h2>
                     <hr class="small">
                     <div class="row">
+                        <!--E-commerce Link-->
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
+                                <a href="#" role="button" data-toggle="popover" data-trigger="hover" data-placement="top" title="E-commerce" 
+                                   data-content=".NET MVC Web App, built using Code-first Entity Framework">
                                     <h2><span>E-commerce Site</span></h2>
                                     <img class="img-portfolio img-responsive" src="~/Content/images/Shopportfolio.png">
                                 </a>
                             </div>
                         </div>
+                        <!--JavaScript Exercises Link-->
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="/Home/JavaScriptExercises">
+                                <a href="/Home/JavaScriptExercises" data-toggle="popover" data-trigger="hover" data-placement="top" title="JavaScript Exercises" 
+                                   data-content="Demonstrates a variety of basic algorithms coded in JavaScript and displayed with Bootstrap">
                                     <h2><span>JavaScript Exercises</span></h2>
                                    <img class="img-portfolio img-responsive" src="~/Content/images/JSEportfolio.png">
                                
                                 </a>
                             </div>
                         </div>
+                        <!--To be added-->
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
@@ -212,6 +227,7 @@
                                 </a>
                             </div>
                         </div>
+                        <!--To be added-->
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
@@ -220,8 +236,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
+                    <!-- /.row (nested) Comment out "View More Items button until needed"
+                    <a href="#" class="btn btn-dark">View More Items</a>-->
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -237,11 +253,143 @@
                 <div class="col-lg-12 text-center">
                     <h3>Get in touch to discuss your needs.</h3>
                     <a href="#footer" class="btn btn-lg btn-light">Contact</a>
-                    <a href="https://www.instagram.com/p/BIIHRPLAq6E/" class="btn btn-lg btn-dark">Look at Me!</a>
+                    <a href="https://www.dropbox.com/s/km1fdgjblvkyk6q/Ruchala%20resume.docx?dl=0" class="btn btn-lg btn-dark" target="_blank">Download Resume</a>
                 </div>
             </div>
         </div>
     </aside>
+    <!-- Resume -->
+    <section id="resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Resume</h2>
+                    <hr class="small">
+                </div>
+            </div>
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                    <h3>Experience</h3>
+                    <p>
+                        <strong>Coder Foundry, Kernersville, NC</strong><br />
+                        <em>2016-present Full Stack Developer</em>
+                        <ul>
+                            <li>Built an interactive ecommerce site using C#, MVC 5, Code-first Entity Framework, SQL Server and LINQ. Deployed with Microsoft Azure.</li>
+                            <li>Built a portfolio website using C#, MVC 5 and JavaScript. Designed and implemented front end using HTML 5 and Bootstrap.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <strong>Convergent Technologies, Winston-Salem, NC</strong><br />
+                        <em>2014-2016 Service Desk Coordinator</em>
+                        <ul>
+                            <li>Planned and implemented physical-to-virtual server migrations.</li>
+                            <li>Installed and administered Windows servers and workstations.</li>
+                            <li>Responded to customer requests for data support.</li>
+                            <li>Managed ticketing through Tigerpaw CRM. Maintained Tigerpaw database and implemented a customer-service web portal.</li>
+                            <li>Technologies used include: Microsoft Windows 7, 8.1, 10, Server 2012 R2, Office 365, Avaya, Fortinet, Kaseya, ESET antivirus, and Ubiquiti products.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <strong>University of North Carolina at Greensboro</strong><br />
+                        <em>2012-2015 Lecturer</em>
+                        <ul>
+                            <li>Designed and taught college music courses.</li>
+                            <li>Built course sites using a range of learning management systems, including Blackboard, Canvas, and Moodle.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <strong>Independent</strong><br />
+                        <em>2000-present Music Teacher and Researcher</em>
+                        <ul>
+                            <li>Taught private lessons on banjo, guitar, fiddle.</li>
+                            <li>Planned, researched, and wrote a scholarly monograph on traditional music and dance.</li>
+                            <li>Published articles in peer-reviewed journals and presented at national conferences.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <strong>Brown University, Providence, RI</strong><br />
+                        <em>2003-2006 Graduate Assistant</em>
+                        <ul>
+                            <li>Assisted professors in teaching, grading and research, taught classes in music, transcribed recordings and documents.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <strong>The New Teacher Project, New York, NY</strong><br />
+                        <em>2002-2003 Operations Associate</em>
+                        <ul>
+                            <li>Data entry and filing for a non-profit that recruited teachers for the New York City public school system.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <strong>About.com, New York, NY</strong><br />
+                        <em>1997 Assistant Editor, 1997-1999 Editor, 1999-2000 Editorial Manager</em>
+                        <ul>
+                            <li>
+                                Responsible for overall direction of the Entertainment and Travel channels of a top-ten Internet site.
+                                Trained and managed a staff of four editors. Worked with the business development, marketing and design departments to devise and implement improvements to the service.
+                            </li>
+                            <li>Served as main point of contact for 30-60 independent content providers. Wrote headlines, promotional copy and newsletters.</li>
+                        </ul>
+                    </p>
+                </div>
+                <!-- Right Column -->
+                <div class="col-md-6">
+                    <h3>Technologies</h3>
+                    <p>
+                        <ul>
+                            <li>C#, MVC 5, .NET.</li>
+                            <li>HTML 5, CSS 3, JavaScript, Razor, Bootstrap.</li>
+                            <li>Entity Framework, SQL Server, LINQ.</li>
+                        </ul>
+                    </p>
+
+                    <h3>Education</h3>
+
+                    <p>
+                        <ul>
+                            <li>A.A.S., Networking Technology, Forsyth Tech, 2016.</li>
+                            <li>Ph.D., Ethnomusicology, Brown University, 2011.</li>
+                            <li>B.A. <em>cum laude</em>, English Literature, New York University, 1995.</li>
+                        </ul>
+                    </p>
+                    <h3>Certifications</h3>
+                    <p>
+                        <ul>
+                            <li>Microsoft 70-410: Installing and Configuring Windows Server 2012 R2, 2015</li>
+                            <li>Microsoft 74-409: Server Virtualization, 2015</li>
+                            <li>CCNA Routing and Switching, 2014</li>
+                            <li>CompTIA Security+, 2014</li>
+                            <li>CompTIA A+, 2015</li>
+                        </ul>
+                    </p>
+                    <hr class="small" />
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="https://github.com/jruchala"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/james-ruchala-5a817a10"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/jruthedamaja/"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                                    </li>
+                                </ul>
+                            </p>
+                            <hr class="small" />
+                            <p>
+                                <a href="https://www.dropbox.com/s/km1fdgjblvkyk6q/Ruchala%20resume.docx?dl=0" class="btn btn-lg btn-dark" target="_blank">Download Resume</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Map -->
     <section id="contact" class="map">
@@ -365,6 +513,13 @@
         }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
+
+        // Initialize tooltip and popover apis
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+    })
+
     </script>
 
 </body>

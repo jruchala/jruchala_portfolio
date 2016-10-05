@@ -223,6 +223,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\images\bg.jpg" />
     <Content Include="Content\images\callout.jpg" />
+    <Content Include="Content\images\circles.jpg" />
     <Content Include="Content\images\code-5.jpg" />
     <Content Include="Content\images\JSEportfolio.png" />
     <Content Include="Content\images\pexels-photo-24973.jpg" />
