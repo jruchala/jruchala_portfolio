@@ -345,8 +345,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\Bootstrap.cshtml" />
-    <Content Include="Views\Home\Bootstrap2.cshtml" />
     <Content Include="Views\Home\Exercise.cshtml" />
     <Content Include="Views\Home\JavaScriptExercises.cshtml" />
     <Content Include="Views\Home\Charts.cshtml" />
