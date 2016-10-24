@@ -127,11 +127,17 @@ function calculate() {
                                 <pre class="brush: js;">
 function calculateFactorial() {
     inNumber = Number(document.getElementById("factorialNumber").value);
-    var y = 1;
-    for (var i = inNumber; i > 0; i--) {
-        y *= i;   
+    if (inNumber > 0 ){
+        var y = 1;
+        for (var i = inNumber; i > 0; i--) {
+            y *= i;
+        }
+        document.getElementById("resultFactorial").innerHTML = "Factorial: " + y;
     }
-    document.getElementById("resultFactorial").innerHTML = "Factorial: " + y;
+    else
+    {
+        document.getElementById("resultFactorial").innerHTML = "Please enter an integer greater than zero.";
+    }
 } // end calculateFactorial
                                 </pre>
                             </div>
@@ -173,16 +179,16 @@ function fizzBuzz() {
     document.getElementById("resultFizzBuzz").innerHTML = "";
     for (var x = 1; x < 101; x++) {
         if (x % num1 === 0 && x % num2 === 0) {
-            document.getElementById("resultFizzBuzz").innerHTML += "<br />FizzBuzz";
+            document.getElementById("resultFizzBuzz").innerHTML += "FizzBuzz ";
         }
         else if (x % num1 === 0)
-            document.getElementById("resultFizzBuzz").innerHTML += "<br />Fizz";
+            document.getElementById("resultFizzBuzz").innerHTML += "Fizz ";
         else if (x % num2 === 0)
-            document.getElementById("resultFizzBuzz").innerHTML += "<br />Buzz";
+            document.getElementById("resultFizzBuzz").innerHTML += "Buzz ";
         else
-            document.getElementById("resultFizzBuzz").innerHTML += "<br />" + x;
+            document.getElementById("resultFizzBuzz").innerHTML += x + " ";
     }
-} // end fizzBuzz    
+} // end fizzBuzz   
                                 </pre>
                             </div>
                         </div>
@@ -281,11 +287,17 @@ function findPalindrome() {
     } // end calculateMin
     function calculateFactorial() {
         inNumber = Number(document.getElementById("factorialNumber").value);
-        var y = 1;
-        for (var i = inNumber; i > 0; i--) {
-            y *= i;
+        if (inNumber > 0 ){
+            var y = 1;
+            for (var i = inNumber; i > 0; i--) {
+                y *= i;
+            }
+            document.getElementById("resultFactorial").innerHTML = "Factorial: " + y;
         }
-        document.getElementById("resultFactorial").innerHTML = "Factorial: " + y;
+        else
+        {
+            document.getElementById("resultFactorial").innerHTML = "Please enter an integer greater than zero.";
+        }
     } // end calculateFactorial
     function fizzBuzz() {
         num1 = Number(document.getElementById("fizzNum").value);
@@ -293,14 +305,14 @@ function findPalindrome() {
         document.getElementById("resultFizzBuzz").innerHTML = "";
         for (var x = 1; x < 101; x++) {
             if (x % num1 === 0 && x % num2 === 0) {
-                document.getElementById("resultFizzBuzz").innerHTML += "<br/>FizzBuzz";
+                document.getElementById("resultFizzBuzz").innerHTML += "FizzBuzz ";
             }
             else if (x % num1 === 0)
-                document.getElementById("resultFizzBuzz").innerHTML += "<br/>Fizz";
+                document.getElementById("resultFizzBuzz").innerHTML += "Fizz ";
             else if (x % num2 === 0)
-                document.getElementById("resultFizzBuzz").innerHTML += "<br/>Buzz";
+                document.getElementById("resultFizzBuzz").innerHTML += "Buzz ";
             else
-                document.getElementById("resultFizzBuzz").innerHTML += "<br/>" + x;
+                document.getElementById("resultFizzBuzz").innerHTML += x + " ";
         }
     } // end fizzBuzz
     function findPalindrome() {
